@@ -1,0 +1,81 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  
+}
+.titulo-collage {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 3rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #333; /* más elegante que el negro puro */
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: min(90vmin, 100vw);
+  height: min(90vmin, 100vh);
+  margin: 0 auto;
+  gap: 0;
+}
+
+.tarjeta-volteable {
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.tarjeta-volteable-interior {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.tarjeta-volteable.volteada .tarjeta-volteable-interior {
+  transform: rotateY(180deg);
+}
+
+.tarjeta-frente,
+.tarjeta-detras {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 0; /* ESQUINAS CUADRADAS */
+  overflow: hidden;
+}
+
+.tarjeta-frente img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; /* elimina espacios invisibles */
+}
+
+.tarjeta-detras {
+  background: #FFF9C4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.tarjeta-detras p { 
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
