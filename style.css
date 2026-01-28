@@ -93,3 +93,25 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .tarjeta-detras {
+    padding: 20px;
+  }
+
+  .tarjeta-detras p {
+    font-size: 0.9rem;
+    line-height: 1.3;
+  }
+
+  .tarjeta-volteable {
+    height: 250px; /* evita tarjetas gigantes en móvil */
+  }
+
+  .grid {
+    width: 95vw;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+}
