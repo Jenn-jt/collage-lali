@@ -12,7 +12,7 @@ body {
 .titulo-collage {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
-  font-size: 1.2rem;
+  font-size: 3rem;
   letter-spacing: 1.5px;
   margin-bottom: 40px;
   text-align: center;
@@ -79,6 +79,6 @@ body {
 .tarjeta-detras p { 
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
 }
 
