@@ -82,3 +82,14 @@ body {
   font-size: 1rem;
 }
 
+@media (max-width: 600px) {
+  .grid {
+    width: 95vw;
+    height: 95vw;
+  }
+
+  .tarjeta-detras p {
+    font-size: 0.9rem;
+  }
+}
+
