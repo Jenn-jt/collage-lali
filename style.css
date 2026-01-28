@@ -4,9 +4,11 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 20px;
-  background: linear-gradient(135deg, #ffe3e3, #ffd8b5, #ffe9c9, #f3e4ff); /* opcional: para que no sea tan chillón */ background-attachment: fixed;
-  
+  background: linear-gradient( 135deg, #fff6f6, #ffeede, #f9f7ff, #e8f7f1 
+  ); 
+  background-attachment: fixed;
 }
+
 .titulo-collage {
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
